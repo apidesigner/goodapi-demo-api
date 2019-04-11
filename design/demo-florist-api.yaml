@@ -203,6 +203,8 @@ paths:
               enum: 
                 - returned
                 - cancelled
+              example:
+                returned
           required: 
             - orderStatus
           example: 
