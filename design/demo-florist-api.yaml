@@ -1,6 +1,6 @@
 swagger: '2.0'
 info:
-  version: 1.0.1
+  version: 1.0.2
   title: Florist LLC Order API
   description: >- 
     # Florist LLC. Order API
@@ -183,7 +183,7 @@ paths:
     patch:
       tags:
       - users
-      summary: Cancel or Return Order
+      summary: Cancel or Return Order.
       description: >- 
         Depending on the state of the order you may return a received order or cancel an order that has not been shipped yet.
       consumes:
