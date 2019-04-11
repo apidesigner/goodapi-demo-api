@@ -14,7 +14,7 @@
     "test-input": "swagger-cli validate ./design/demo-florist-api.yaml",
     "test-build": "swagger-cli validate ./build/demo-florist-api.yaml",
     "test-models": "supermodel schema validate ./supermodel/<username>/",
-    "build": "mkdir -p ./build && cp ./design/demo-florist-api.yaml ./build",
+    "build": "mkdir -p ./build && cp ./design/demo-florist-api.yaml ./build/",
     "publish-api": "curl -X POST https://app.swaggerhub.com/apis/api-program/demo-florist-api --data-binary @./build/demo-florist-api.yaml -H \"Authorization:${SWAGGERHUB_API_KEY}\" -H \"Content-Type: application/yaml\"",
     "publish-models": "cd ./supermodel/<username>/ && supermodel push"
   }
